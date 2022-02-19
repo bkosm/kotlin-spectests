@@ -1,4 +1,4 @@
-rootProject.name = "kotlin-spec-tests"
+rootProject.name = "kotlin-spectests"
 
 plugins {
     id("de.fayard.refreshVersions") version "0.40.1"

@@ -1,6 +1,6 @@
-package com.github.bkosm.specTests
+package io.github.bkosm.spectests
 
-import com.github.bkosm.specTests.SpecScope.Companion.describedBy
+import io.github.bkosm.spectests.SpecScope.Companion.describedBy
 import org.junit.jupiter.api.DynamicNode
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.TestFactory

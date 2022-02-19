@@ -25,8 +25,8 @@ publishing {
     publications {
         create<MavenPublication>("maven") {
             groupId = "io.github.bkosm"
-            artifactId = "spec-tests"
-            version = "0.1.3-SNAPSHOT"
+            artifactId = "spectests"
+            version = "0.2.0"
 
             from(components["java"])
         }
