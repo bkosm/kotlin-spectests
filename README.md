@@ -1,4 +1,4 @@
-# kotlin-spec-tests
+# kotlin-spectests
 
 ![Tests](https://github.com/bkosm/kotlin-spec-tests/actions/workflows/gradle.yml/badge.svg)
 ![Jitpack](https://jitpack.io/v/bkosm/kotlin-spec-tests.svg)
@@ -6,11 +6,14 @@
 
 A Kotlin library for creating dynamic tests more fluently.
 
-## *Why should I use it?*
+## Why should I use it?
 
 You can create readable jest-style assertions that show up as subtests.
 
 ```kotlin
+//...
+import io.github.bkosm.spectests.SpecScope.Companion.describedBy
+
 //...
 internal class ProviderTest {
     @TestFactory
@@ -78,6 +81,29 @@ fun describedBy(block: SpecScope.() -> Unit): Collection<DynamicNode> =
         block()
         testSpecs
     }
+```
+
+---
+
+## How can I check it out?
+
+The releases are available via [Jitpack](https://jitpack.io/#bkosm/kotlin-spec-tests).
+
+```kotlin
+// build.gradle.kts
+
+//...
+repositories {
+    mavenCentral()
+    //...
+    maven { url = uri("https://jitpack.io") }
+}
+
+dependencies {
+    //...
+    testImplementation("com.github.bkosm:kotlin-spec-tests:0.2.0")
+}
+//...
 ```
 
 ---
