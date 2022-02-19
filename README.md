@@ -1,5 +1,9 @@
 # kotlin-spec-tests
 
+![Tests](https://github.com/bkosm/kotlin-spec-tests/actions/workflows/gradle.yml/badge.svg)
+
+---
+
 A Kotlin library for creating dynamic tests more fluently.
 
 ## *Why should I use it?*
