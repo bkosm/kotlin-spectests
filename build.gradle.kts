@@ -4,8 +4,8 @@ plugins {
     kotlin("jvm") version "1.6.10"
 }
 
-group = "kotlin.spec-tests"
-version = "0.1.0"
+group = "io.github.bkosm.spec-tests"
+version = "0.1.1-SNAPSHOT"
 
 repositories {
     mavenCentral()
