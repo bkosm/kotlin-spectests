@@ -1,4 +1,4 @@
-package io.github.bkosm.`spec-tests`
+package com.github.bkosm.specTests
 
 import org.junit.jupiter.api.DynamicNode
 import org.junit.jupiter.api.DynamicTest

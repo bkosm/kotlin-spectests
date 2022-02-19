@@ -5,13 +5,6 @@ plugins {
     `maven-publish`
 }
 
-val versionString = "0.1.1-SNAPSHOT"
-val groupIdString = "io.github.bkosm"
-val artifactIdString = "spec-tests"
-
-group = "$groupIdString.$artifactIdString"
-version = versionString
-
 repositories {
     mavenCentral()
 }
@@ -31,9 +24,9 @@ tasks.withType<KotlinCompile> {
 publishing {
     publications {
         create<MavenPublication>("maven") {
-            groupId = groupIdString
-            artifactId = artifactIdString
-            version = versionString
+            groupId = "com.github.bkosm"
+            artifactId = "specTests"
+            version = "0.1.2-SNAPSHOT"
 
             from(components["java"])
         }
