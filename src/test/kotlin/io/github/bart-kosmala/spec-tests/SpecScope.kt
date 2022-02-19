@@ -1,4 +1,4 @@
-package dev.`spec-tests`
+package io.github.`bart-kosmala`.`spec-tests`
 
 import org.junit.jupiter.api.DynamicNode
 import org.junit.jupiter.api.DynamicTest
