@@ -1,4 +1,4 @@
-package io.github.`bart-kosmala`.`spec-tests`
+package io.github.bkosm.`spec-tests`
 
 import io.github.`bart-kosmala`.`spec-tests`.SpecScope.Companion.describedBy
 import org.junit.jupiter.api.DynamicNode
