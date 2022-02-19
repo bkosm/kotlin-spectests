@@ -24,8 +24,8 @@ tasks.withType<KotlinCompile> {
 publishing {
     publications {
         create<MavenPublication>("maven") {
-            groupId = "com.github.bkosm"
-            artifactId = "specTests"
+            groupId = "io.github.bkosm"
+            artifactId = "spec-tests"
             version = "0.1.3-SNAPSHOT"
 
             from(components["java"])
