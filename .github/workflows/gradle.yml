@@ -35,5 +35,7 @@ jobs:
           distribution: 'temurin'
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
+      - name: Bring back wrapper
+        run: ./gradlew wrapper
       - name: Test & build
         run: ./gradlew test build
