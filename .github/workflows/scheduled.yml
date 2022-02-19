@@ -1,13 +1,11 @@
-name: CI with Gradle
+name: Scheduled versions refresh
 
 on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+  schedule:
+    - cron: '0 5 * * *'
 
 jobs:
-  build:
+  refreshVersions:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -28,5 +26,13 @@ jobs:
           distribution: 'temurin'
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
-      - name: Test & build
-        run: ./gradlew test build
+      - name: Run refreshVersions
+        run: ./gradlew refreshVersions
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4.1.2
+        with:
+          commit_message: "Refreshed versions commit"
+          branch: ${{ github.head_ref }}
+          skip_fetch: true
+          skip_checkout: true
+          commit_author: Github Actions runner <actions@github.com>

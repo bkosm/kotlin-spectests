@@ -1,6 +1,7 @@
 # kotlin-spectests
 
 ![Tests](https://github.com/bkosm/kotlin-spec-tests/actions/workflows/gradle.yml/badge.svg)
+![Scheduled](https://github.com/bkosm/kotlin-spec-tests/actions/workflows/scheduled.yml/badge.svg)
 ![Jitpack](https://jitpack.io/v/bkosm/kotlin-spec-tests.svg)
 ---
 
