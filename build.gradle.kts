@@ -10,7 +10,7 @@ repositories {
 }
 
 dependencies {
-    testImplementation(kotlin("test"))
+    implementation("org.junit.jupiter:junit-jupiter:_")
 }
 
 tasks.test {
@@ -26,7 +26,7 @@ publishing {
         create<MavenPublication>("maven") {
             groupId = "com.github.bkosm"
             artifactId = "specTests"
-            version = "0.1.2-SNAPSHOT"
+            version = "0.1.3-SNAPSHOT"
 
             from(components["java"])
         }
