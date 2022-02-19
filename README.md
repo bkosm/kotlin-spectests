@@ -1,7 +1,7 @@
 # kotlin-spec-tests
 
 ![Tests](https://github.com/bkosm/kotlin-spec-tests/actions/workflows/gradle.yml/badge.svg)
-
+![Jitpack](https://jitpack.io/v/bkosm/kotlin-spec-tests.svg)
 ---
 
 A Kotlin library for creating dynamic tests more fluently.
